@@ -1,0 +1,549 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#main-div{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#top-div{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(149, 225, 98);
+}
+
+
+.top-opt{
+    display: flex;
+    gap: 10px;
+    width: 12%;
+    height: 100%;
+    align-items: center;
+}
+
+#left-side{
+    width :30%;
+}
+ 
+.opt{
+    width: 25%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #left-side .opt{
+        width: 15%;
+        
+    }
+
+.opt:hover{
+    background-color: antiquewhite;
+    opacity: 0.6;
+    border-radius: 10%;
+    color: black;
+}
+
+.opt svg{
+    width: 60%;
+    height: 60%;
+}
+
+#body-div{
+    width: 100%;
+    height: 93%;
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-left: 3%;
+}
+
+.search svg{
+    height: 70%;
+    width: 20%;
+}
+
+.search input{
+    height: 70%;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1em;
+
+}
+
+.profile{
+    width: 25%;
+    height: 70%;
+}
+
+.profile svg{
+    width: 100%;
+    height: 100%;
+}
+
+.search:hover{
+ background-color: white;
+}
+
+.search:focus-within{
+    background-color: white;
+    width: 70%;
+    transition: 0.5s ease-in-out;
+}
+
+ 
+
+#menu-div{
+    width: 20%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    justify-content: center;
+    background-color: rgb(195, 238, 195);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+    transition: display 0.3s ease-in-out;
+}
+
+
+.menu-item{
+    width: 90%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item a{
+    padding-right: 3%;
+    font-weight: lighter;
+    color: gray;
+    font-size: 0.7em;
+}
+
+#main-opt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-opt{
+    padding-left: 3%;
+    width: 90%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.menu-opt svg{
+    height: 80%;
+    width: 10%;
+}
+
+.menu-opt span{
+    font-size: 1em;
+    text-align: justify;
+    font-weight: bolder;
+}
+
+.menu-item:hover{
+    background-color: white;
+    border-radius: 10px;
+}
+
+#today-div{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#date-div{
+    width: 90%;
+    height: 10%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#date{
+    height: 80%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#view-div{
+    height: 80%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    color: gray;
+}
+
+#view-div svg{
+    height: 50%;
+    width: 40%;
+}
+
+ #date span{
+    font-size: 1.1em;
+    color: gray;
+}
+
+#view-div:hover{
+    background-color: lightgrey;
+    color: black;
+    border-radius: 20px;
+}
+
+#date-tracker{
+    width: 90%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+#more-date{
+    padding-left: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+#create-task{
+    width: 15%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+#create-task div{
+    width: 1.7vw;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#create-task svg{
+    width: 70%;
+    height: 70%;
+    color: red;
+}
+
+#create-task span{
+    padding-top: 0.3%;
+}
+#create-task:hover{
+    color: red;
+}
+
+#create-task:hover #add-svg{
+    background-color: red;
+    border-radius: 50%;
+    
+}
+#create-task:hover .add-svgg{
+    fill: white;
+}
+
+.add-svgg {
+    fill: red;
+}
+
+#task-list{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    padding-top: 3%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    align-items: start;
+    overflow: auto;
+}
+
+.task-card:hover{
+    scale: 1.1;
+}
+
+.task-card{
+    width: 16vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    gap: 10px;
+}
+
+#task-prompt{
+    background-color: white;
+    position: absolute;
+    height: 30vh;
+    width: 50vw;
+    left: 30%;
+    bottom: 50%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+#title-dec{
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+#task-prompt-options{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+}
+
+#prompt-buttons{
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    width: 95%;
+    height: 15%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    align-items: center;
+    padding-right: 5%;
+}
+
+#task-name{
+    width: 97%;
+    height: 30%;
+    font-size: 2em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    text-align: left;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    outline: none;
+    overflow: hidden;
+}
+
+/* Add this new CSS class for the error styling */
+.error {
+    border: 1px solid red;
+    outline: auto;
+}
+
+#task-desc{
+    margin-top: 1%;
+     width: 97%;
+    height: 65%;
+    font-size: 1.4em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    text-align: left;
+    padding-left: 3%;
+    outline: none;
+    overflow: hidden;
+}
+
+#prompt-date,#prompt-time{
+    height: 80%;
+    width: 25%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: wheat;
+    padding-right: 5%;
+}
+
+#cancel, #confirm {
+    width: 20%;
+    height: 100%;
+    margin-right: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #confirm {
+    background-color: darkgreen;
+    color: white;
+  }
+  #cancel {
+    background-color: gray;
+    color: white;
+  }
+
+  #confirm:hover{
+    background-color: palegreen;
+  }
+
+  #cancel:hover{
+    background-color: darkgray;
+  }
+
+  #task-prompt-options div{
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    width: 25%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+
+  }
+
+  #task-prompt-options select{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-color: wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-size: 0.9  em;
+  }
+
+
+  #up-div{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    overflow: auto;
+}
+  
+#filter-div{
+    width: 100%;
+    height: 93%;
+    display: flex;
+    justify-content: right;
+    display: none;
+    flex-direction: column;
+}
+
+ 
+
+.sss{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+
+    
+}
+
+#more-tasks{
+    padding-top: 3%;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    overflow: auto;
+    gap: 30px;
+  
+}
+
+.sss {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sss textarea {
+    width: 20%;
+    height: 40%;
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.3em;
+  }
+  
+  .sss input[type="date"],
+  .sss input[type="time"],
+  .sss select {
+    width: 10%;
+    height: 40%;
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .sss select {
+    width: 15%;
+  }
+  
+  .sss button {
+    padding: 1% 2%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .sss button:hover {
+    background-color: #45a049;
+  }
